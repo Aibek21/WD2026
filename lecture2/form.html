@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <fieldset>
+        <legend>Account info</legend>
+        <label>Username</label>
+        <input type="text" placeholder="Type username" required>
+
+        <label>Password</label>
+        <input type="password" placeholder="Type password">
+    </fieldset>
+
+    <fieldset>
+        <legend>User info</legend>
+        <label>Fullname</label>
+        <input type="text" placeholder="Type fullname" readonly>
+
+        <label>Email</label>
+        <input type="email" placeholder="Type email" disabled>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Gender</legend>
+        <label>Male</label>
+        <input type="radio" name="gender" checked>
+        <label>Female</label>
+        <input type="radio" name="gender">
+    </fieldset>
+
+    <fieldset>
+        <legend>Programming languages</legend>
+        <label>Python</label>
+        <input type="checkbox" name="pl" value="python">
+        <label>Java</label>
+        <input type="checkbox" name="pl" value="java">
+        <label>Javascript</label>
+        <input type="checkbox" name="pl" value="js">
+    </fieldset>
+
+
+    <fieldset>
+        <legend>City</legend>
+        <select multiple>
+            <option>Almaty</option>
+            <option>Astana</option>
+            <option>Shymkent</option>
+        </select>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Additional info</legend>
+        <textarea placeholder="Type something" cols="10" rows="10"></textarea>
+    </fieldset>
+
+    <label>CV</label>
+    <input type="file">
+
+
+    <fieldset>
+        <legend>HTML5</legend>
+        <input type="color">
+        <input type="date">
+        <input type="month">
+        <input type="week">
+        <input type="range">
+        <input type="number" max="10" min="0">
+    </fieldset>
+    <input type="submit">
+</form>
+</body>
+</html>
