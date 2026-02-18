@@ -1,0 +1,12 @@
+p {
+  display: inline;
+}
+
+button {
+  margin-left: 50px;
+}
+
+
+.done-task {
+  text-decoration: line-through;
+}

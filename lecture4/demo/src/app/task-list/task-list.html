@@ -1,0 +1,12 @@
+<input type="text" [(ngModel)]="currentTask().title">
+<button (click)="addTask()">Add task</button>
+
+@if(taskList().length){
+<ul>
+  @for(t of taskList(); track t.id){
+  <li><app-task-item [task]=t (remove)="onTaskRemove($event)"></app-task-item></li>
+  }
+</ul>
+} @else{
+<p>This list is empty</p>
+}
