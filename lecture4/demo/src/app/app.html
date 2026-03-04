@@ -2,4 +2,12 @@
 <!--<p>{{title()}}</p>-->
 <!--<button (click)="toggleText()">Change text</button>-->
 
-<app-task-list></app-task-list>
+<!--<app-task-list></app-task-list>-->
+<!--<app-post-list></app-post-list>-->
+
+<ul>
+  <li><a [routerLink]="['home']">Home</a></li>
+  <li><a [routerLink]="['about']">About</a></li>
+  <li><a [routerLink]="['posts']">Posts</a></li>
+</ul>
+<router-outlet></router-outlet>

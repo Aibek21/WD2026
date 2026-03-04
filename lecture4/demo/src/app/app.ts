@@ -1,11 +1,12 @@
-import {Component, signal} from '@angular/core';
-import {RouterOutlet} from '@angular/router';
+import {Component, inject, signal} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {TaskList} from './task-list/task-list';
+import {PostList} from './post-list/post-list';
+import {RouterModule, RouterOutlet} from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [FormsModule, TaskList],
+  imports: [RouterOutlet, RouterModule, FormsModule, TaskList, PostList],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
@@ -17,3 +18,4 @@ export class App {
   }
 
 }
+

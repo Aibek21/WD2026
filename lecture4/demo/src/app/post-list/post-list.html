@@ -1,0 +1,13 @@
+<input type="text" placeholder="Title" [(ngModel)]='newPost().title'>
+<input type="text" placeholder="Body" [(ngModel)]='newPost().body'>
+<button (click)="addPost()">Add post</button>
+
+@if(isLoaded()){
+<ul>
+@for(post of postList(); track post.id){
+<li><a [routerLink]="['/posts', post.id]">{{post.id}} {{post.title}}</a></li>
+}
+</ul>
+}@else{
+<p>Loading...</p>
+}

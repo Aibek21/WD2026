@@ -1,8 +1,9 @@
-import {Component, signal} from '@angular/core';
+import {Component, inject, signal} from '@angular/core';
 import {Task} from '../../models';
 import {FormsModule} from '@angular/forms';
 import {TaskItem} from '../task-item/task-item';
 import {CommonModule} from '@angular/common';
+import {PostsService} from '../posts-service';
 
 @Component({
   selector: 'app-task-list',
@@ -30,3 +31,4 @@ export class TaskList {
   }
 
 }
+
