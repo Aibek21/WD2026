@@ -3,6 +3,7 @@ from rest_framework import viewsets
 from api.models import Product
 from api.serializers import Product2Serializer
 from rest_framework.decorators import action
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
 
